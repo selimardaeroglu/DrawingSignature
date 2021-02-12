@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		96D27EA125D6EF7B00B681DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D27EA025D6EF7B00B681DB /* ContentView.swift */; };
 		96D27EA325D6EF7C00B681DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D27EA225D6EF7C00B681DB /* Assets.xcassets */; };
 		96D27EA625D6EF7C00B681DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D27EA525D6EF7C00B681DB /* Preview Assets.xcassets */; };
+		96D27EB025D6EF9B00B681DB /* SwiftSignatureView in Frameworks */ = {isa = PBXBuildFile; productRef = 96D27EAF25D6EF9B00B681DB /* SwiftSignatureView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D27EB025D6EF9B00B681DB /* SwiftSignatureView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SignatureViewDemo;
+			packageProductDependencies = (
+				96D27EAF25D6EF9B00B681DB /* SwiftSignatureView */,
+			);
 			productName = SignatureViewDemo;
 			productReference = 96D27E9B25D6EF7B00B681DB /* SignatureViewDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 96D27E9225D6EF7B00B681DB;
+			packageReferences = (
+				96D27EAE25D6EF9B00B681DB /* XCRemoteSwiftPackageReference "SwiftSignatureView" */,
+			);
 			productRefGroup = 96D27E9C25D6EF7B00B681DB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96D27EAE25D6EF9B00B681DB /* XCRemoteSwiftPackageReference "SwiftSignatureView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alankarmisra/SwiftSignatureView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		96D27EAF25D6EF9B00B681DB /* SwiftSignatureView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96D27EAE25D6EF9B00B681DB /* XCRemoteSwiftPackageReference "SwiftSignatureView" */;
+			productName = SwiftSignatureView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96D27E9325D6EF7B00B681DB /* Project object */;
 }
